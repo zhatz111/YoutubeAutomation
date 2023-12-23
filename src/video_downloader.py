@@ -1,5 +1,7 @@
 """_summary_
 """
+import os
+import glob
 import time
 from selenium import webdriver  # pylint: disable=import-error
 from selenium.webdriver.common.by import By  # pylint: disable=import-error
@@ -9,13 +11,75 @@ from selenium.webdriver.support import ( # pylint: disable=import-error
     expected_conditions as EC,
 )
 
-def tiktok_downloader(tiktok_url: str, download_dir: str):
-    """_summary_
+def rename_most_recent_file(directory, new_name):
+    '''The function `rename_most_recent_file` renames the most recent file in a given directory with a new
+    name.
+    
+    Parameters
+    ----------
+    directory
+        The directory parameter is the path to the directory where the files are located. It should be a
+    string representing the directory path.
+    new_name
+        The new name is a string that you want to rename the most recent file to.
+    
+    Returns
+    -------
+        the new file path after renaming the most recent file in the specified directory.
+    
+    '''
 
-    Args:
-        tiktok_url (str): _description_
-        download_dir (str): _description_
-    """
+    # Ensure the directory ends with a slash
+    if not directory.endswith('\\'):
+        directory += '\\'
+
+    # List all files in the directory
+    files = glob.glob(directory + '*')
+
+    # Filter out directories, only keep files
+    files = [f for f in files if os.path.isfile(f)]
+
+    if not files:
+        print("No files found in the directory.")
+        return
+
+    # Sort files by creation time in descending order
+    files.sort(key=os.path.getctime, reverse=True)
+
+    # Get the most recent file
+    most_recent_file = files[0]
+
+    # Extract the extension from the most recent file
+    _, file_extension = os.path.splitext(most_recent_file)
+
+    # Create new file path with the same extension
+    new_file_path = os.path.join(directory, new_name + file_extension)
+
+    # Rename the file
+    os.rename(most_recent_file, new_file_path)
+    # print(f"Renamed '{most_recent_file}' to '{new_file_path}'")
+
+    return new_file_path
+
+def tiktok_downloader(tiktok_url: str, download_dir: str):
+    '''The `tiktok_downloader` function downloads a TikTok video from a given URL and saves it to a
+    specified directory.
+    
+    Parameters
+    ----------
+    tiktok_url : str
+        The URL of the TikTok video you want to download.
+    download_dir : str
+        The `download_dir` parameter is the directory where you want to save the downloaded TikTok video.
+    It should be a string representing the path to the directory on your computer. For example,
+    "C:/Users/Username/Downloads" or "/home/username/Downloads".
+    
+    Returns
+    -------
+        the file path of the downloaded TikTok video.
+    
+    '''
+
     service = Service(executable_path="chromedriver.exe")
     prefs = {"download.default_directory": download_dir}
     options = webdriver.ChromeOptions()
@@ -50,3 +114,11 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
     time.sleep(5)
     # Close the browser
     driver.quit()
+
+    time.sleep(5)
+    vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
+    creator = tiktok_url.split("/")[-3][1:]
+    filename = f"{creator}-{vid_num}"
+    new_file_path = rename_most_recent_file(download_dir, filename)
+
+    return new_file_path

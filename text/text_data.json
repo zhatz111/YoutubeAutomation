@@ -1,0 +1,92 @@
+[
+    {
+        "word": "When",
+        "start": 0.0,
+        "end": 0.3
+    },
+    {
+        "word": "your",
+        "start": 0.3,
+        "end": 0.6
+    },
+    {
+        "word": "fluffy",
+        "start": 0.6,
+        "end": 0.88
+    },
+    {
+        "word": "friend",
+        "start": 0.88,
+        "end": 1.3
+    },
+    {
+        "word": "takes",
+        "start": 1.3,
+        "end": 1.6
+    },
+    {
+        "word": "on",
+        "start": 1.6,
+        "end": 1.82
+    },
+    {
+        "word": "the",
+        "start": 1.82,
+        "end": 1.98
+    },
+    {
+        "word": "bucket",
+        "start": 1.98,
+        "end": 2.22
+    },
+    {
+        "word": "challenge,",
+        "start": 2.22,
+        "end": 2.74
+    },
+    {
+        "word": "but",
+        "start": 3.08,
+        "end": 3.2
+    },
+    {
+        "word": "the",
+        "start": 3.2,
+        "end": 3.36
+    },
+    {
+        "word": "bucket",
+        "start": 3.36,
+        "end": 3.56
+    },
+    {
+        "word": "has",
+        "start": 3.56,
+        "end": 3.92
+    },
+    {
+        "word": "other",
+        "start": 3.92,
+        "end": 4.26
+    },
+    {
+        "word": "plans,",
+        "start": 4.26,
+        "end": 4.62
+    },
+    {
+        "word": "Wooly",
+        "start": 4.92,
+        "end": 5.1
+    },
+    {
+        "word": "Wipeout",
+        "start": 5.1,
+        "end": 5.64
+    },
+    {
+        "word": "incoming.",
+        "start": 5.64,
+        "end": 6.12
+    }
+]
