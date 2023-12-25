@@ -1,9 +1,24 @@
-"""_summary_
 
-Returns:
-    _type_: _description_
-"""
+'''The `main` function takes in various parameters to create a video with subtitles and audio.
+
+Parameters
+----------
+audio_file_path : str
+    The `audio_file_path` parameter is the path to the audio file that you want to transcribe and align
+with subtitles.
+subtitle_json_path : str
+    The `subtitle_json_path` parameter is the file path where you want to save the JSON file containing
+the word-level information (word, start time, end time) of the transcribed audio.
+model_type : str, optional
+    The `model_type` parameter is used to specify the type of pre-trained model to use for
+transcription. It has a default value of "medium", but you can pass different values to use
+different models. The available options depend on the library you are using for transcription (e.g.,
+Whisper, Deep
+
+'''
+
 import json
+from pathlib import Path
 import whisper  # pylint: disable=import-error
 from moviepy.editor import (  # pylint: disable=import-error
     TextClip,
@@ -14,6 +29,8 @@ from moviepy.editor import (  # pylint: disable=import-error
     ImageClip,
 )
 
+# Determine parent path of repository
+parent_dir = Path.cwd()
 
 def forced_align(
     audio_file_path: str, subtitle_json_path: str, model_type: str = "medium"
@@ -39,7 +56,7 @@ def forced_align(
 
     model = whisper.load_model(model_type)
     print("Transcribing Audio with word timestamps...")
-    result = model.transcribe(audio_file_path, word_timestamps=True)
+    result = model.transcribe(str(audio_file_path), word_timestamps=True)
 
     print("Writing timestamped text data to json...")
     wordlevel_info = []
@@ -135,7 +152,7 @@ def split_text_into_lines(data):
 def create_caption(
     text_json,
     framesize,
-    font="fonts/burbankbig_fortnite.ttf",
+    font= parent_dir / "fonts/burbankbig_fortnite.ttf",
     fontsize=120,
     color="white",
     stroke_color="black",
@@ -223,6 +240,8 @@ def create_caption(
                     color=color,
                     stroke_color=stroke_color,
                     stroke_width=stroke_size,
+                    # kerning=-3,
+                    method="caption"
                 )
                 .set_start(text_json["start"])
                 .set_duration(full_duration)
@@ -293,6 +312,8 @@ def create_caption(
                     color=bgcolor,
                     stroke_color=stroke_color,
                     stroke_width=stroke_size,
+                    # kerning=-3,
+                    method="caption"
                 )
                 .set_start(highlight_word["start"])
                 .set_duration(highlight_word["duration"])
@@ -310,7 +331,7 @@ def main(
     speech_audio_path: str,
     video_output_path: str,
     subtitle_json_path: str,
-    font: str = "fonts/burbankbig_fortnite.ttf",
+    font: str = parent_dir / "fonts/burbankbig_fortnite.ttf",
     fontsize: int = 120,
     color: str = "white",
     stroke_color: str = "black",
@@ -400,7 +421,7 @@ def main(
         all_linelevel_splits.extend(out)
 
     # Load the input video
-    input_video = VideoFileClip(input_video_path)
+    input_video = VideoFileClip(str(input_video_path))
     if input_video.size[0] != frame_size[0]:
         input_video = input_video.resize( # pylint: disable=no-member
             width=frame_size[0]
@@ -409,13 +430,13 @@ def main(
     print("Compositing final video...")
     # If you want to overlay this on the original video uncomment this and
     # also change frame_size, font size and color accordingly.
-    background_clip = ImageClip("Photos/default_bg_image.png").set_duration(
+    background_clip = ImageClip(str(parent_dir / "Photos/default_bg.png")).set_duration(
         input_video.duration
     )
     final_video = CompositeVideoClip(
         [background_clip, input_video.set_position("center")] + all_linelevel_splits
     )
-    audioclip = AudioFileClip(speech_audio_path)
+    audioclip = AudioFileClip(str(speech_audio_path))
     new_audioclip = CompositeAudioClip([input_video.audio, audioclip])
 
     # Set the audio of the final video to be the same as the input video
@@ -423,7 +444,7 @@ def main(
 
     # Save the final clip as a video file with the audio included
     final_video.write_videofile(
-        video_output_path,
+        str(video_output_path),
         fps=fps,
         codec=codec,
         audio_codec=audio_codec,

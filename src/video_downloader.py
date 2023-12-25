@@ -1,8 +1,26 @@
-"""_summary_
-"""
+'''The `tiktok_downloader` function downloads a TikTok video from a given URL and saves it to a
+specified directory.
+
+Parameters
+----------
+directory
+    The `directory` parameter is the path to the directory where the files are located. It should be a
+string representing the directory path.
+new_name
+    The `new_name` parameter is a string representing the new name you want to give to the most recent
+file in the specified directory.
+
+Returns
+-------
+    The `rename_most_recent_file` function returns the new file path after renaming the most recent
+file in the specified directory.
+
+'''
+
 import os
 import glob
 import time
+from pathlib import Path
 from selenium import webdriver  # pylint: disable=import-error
 from selenium.webdriver.common.by import By  # pylint: disable=import-error
 from selenium.webdriver.chrome.service import Service  # pylint: disable=import-error
@@ -11,7 +29,11 @@ from selenium.webdriver.support import ( # pylint: disable=import-error
     expected_conditions as EC,
 )
 
-def rename_most_recent_file(directory, new_name):
+# Determine parent path of repository
+parent_dir = Path.cwd()
+
+
+def rename_most_recent_file(new_dir, new_name):
     '''The function `rename_most_recent_file` renames the most recent file in a given directory with a new
     name.
     
@@ -30,11 +52,12 @@ def rename_most_recent_file(directory, new_name):
     '''
 
     # Ensure the directory ends with a slash
-    if not directory.endswith('\\'):
-        directory += '\\'
+    new_dir = str(new_dir)
+    if not new_dir.endswith('\\'):
+        new_dir += "\\"
 
     # List all files in the directory
-    files = glob.glob(directory + '*')
+    files = glob.glob(new_dir + '*')
 
     # Filter out directories, only keep files
     files = [f for f in files if os.path.isfile(f)]
@@ -53,7 +76,7 @@ def rename_most_recent_file(directory, new_name):
     _, file_extension = os.path.splitext(most_recent_file)
 
     # Create new file path with the same extension
-    new_file_path = os.path.join(directory, new_name + file_extension)
+    new_file_path = os.path.join(new_dir, new_name + file_extension)
 
     # Rename the file
     os.rename(most_recent_file, new_file_path)
@@ -79,9 +102,17 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
         the file path of the downloaded TikTok video.
     
     '''
-
-    service = Service(executable_path="chromedriver.exe")
-    prefs = {"download.default_directory": download_dir}
+    vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
+    creator = tiktok_url.split("/")[-3][1:]
+    filename = f"{creator}-{vid_num}"
+    vid_dir = os.listdir(download_dir)
+    if f"{filename}.mp4" in vid_dir:
+        print("Using existing Video file!")
+        return download_dir / f"{filename}.mp4"
+    
+    print(parent_dir)
+    service = Service(executable_path= str(parent_dir / "chromedriver.exe"))
+    prefs = {"download.default_directory": str(download_dir)}
     options = webdriver.ChromeOptions()
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--start-maximized")
@@ -116,9 +147,7 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
     driver.quit()
 
     time.sleep(5)
-    vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
-    creator = tiktok_url.split("/")[-3][1:]
-    filename = f"{creator}-{vid_num}"
+
     new_file_path = rename_most_recent_file(download_dir, filename)
 
     return new_file_path

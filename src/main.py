@@ -1,32 +1,29 @@
-"""_summary_
-"""
+# This code is a Python script that performs various tasks related to video processing.
+
+import json
+from pathlib import Path
 from video_downloader import tiktok_downloader # pylint: disable=import-error
 from closed_captions import forced_align, main # pylint: disable=import-error
 from text_speech import generate_speech # pylint: disable=import-error
 
+# Determine parent path of repository
+parent_dir = Path.cwd()
+
 # Variables that need to be changed for each new video
-TIKTOK_URL = "https://www.tiktok.com/@funnyanimal319/video/7289089427132009761"
-VIDEO_OUTPUT_NAME = "vid_7_12232023"
+TIKTOK_URL = "https://www.tiktok.com/@genipool14/video/7282364795297254657"
+VIDEO_OUTPUT_NAME = "vid_12_12252023"
 
 # Variaales that should be left alone unless changing download directory or
 # script location
-DOWNLOAD_DIR = r"C:\Users\zhatz\Documents\GitHub\YoutubeAutomation\Videos"
-VIDEO_SCRIPT = "text/video_script.txt"
-AUDIO_FILE_PATH = f"Audio/{VIDEO_OUTPUT_NAME}"
 
-voices = [
-    {"voice_id": "mZ8gt3O1VRrVHQ9eD5M6", "name": "Neil"},
-    {"voice_id": "BCIFybqsHwndhbJ6VRqL", "name": "Dann"},
-    {"voice_id": "bnEwjkD4Bh7zQ4PGuPRB", "name": "Gault"},
-    {"voice_id": "ErXwobaYiN019PkySvjV", "name": "Antoni"},
-    {"voice_id": "MF3mGyEYCl7XYWbV9V6O", "name": "Elli"},
-    {"voice_id": "TxGEqnHWrfWFTfGW9XjX", "name": "Josh"},
-    {"voice_id": "VR6AewLTigWG4xSOukaG", "name": "Arnold"},
-    {"voice_id": "pNInz6obpgDQGcFmaJgB", "name": "Adam"},
-    {"voice_id": "yoZ06aMxZJJ28mfd3POQ", "name": "Sam"},
-    {"voice_id": "soelvv1eItXKyaOcH89G", "name": "Mark"},
-    {"voice_id": "G7paNAs8Wo434Eezb936", "name": "Harry"}
-]
+with open(parent_dir / "data/api_keys.json", encoding="utf-8") as f:
+    api_keys = json.load(f)
+
+DOWNLOAD_DIR = parent_dir / "Videos"
+VIDEO_SCRIPT = parent_dir / "text/video_script.txt"
+AUDIO_FILE_PATH = parent_dir / f"Audio/{VIDEO_OUTPUT_NAME}"
+
+# Main functions to download and create video
 
 video_file_path = tiktok_downloader(
     tiktok_url=TIKTOK_URL,
@@ -34,28 +31,28 @@ video_file_path = tiktok_downloader(
 )
 
 generate_speech(
-    api_key_path = "data/api_key.txt",
+    api_key = api_keys["voice_api_keys"]["eleven_labs_2"],
     text_file_path = VIDEO_SCRIPT,
     output_filename = AUDIO_FILE_PATH,
-    voice_id = "bnEwjkD4Bh7zQ4PGuPRB",
+    voice_id = api_keys["voice_ids"]["voice_id_2"],
 )
 
 forced_align(
-    audio_file_path = f"{AUDIO_FILE_PATH}.mp3",
-    subtitle_json_path = "text/text_data.json",
+    audio_file_path = parent_dir / f"{AUDIO_FILE_PATH}.mp3",
+    subtitle_json_path = parent_dir / "text/text_data.json",
     model_type = "medium",
 )
 
 main(
     input_video_path = video_file_path,
-    speech_audio_path = f"{AUDIO_FILE_PATH}.mp3",
-    video_output_path = f"Videos/{VIDEO_OUTPUT_NAME}.mp4",
-    subtitle_json_path = "text/text_data.json",
-    font ="fonts/burbankbig_fortnite.ttf",
+    speech_audio_path = parent_dir / f"{AUDIO_FILE_PATH}.mp3",
+    video_output_path = parent_dir / f"Videos/{VIDEO_OUTPUT_NAME}.mp4",
+    subtitle_json_path = parent_dir / "text/text_data.json",
+    font = parent_dir / "fonts/digitalt.ttf",
     fontsize = 100,
     color = "white",
     stroke_color = "black",
-    bgcolor = "#75BFEC",
+    bgcolor = "#00cc00", # #00cc00, #75BFEC
     stroke_size = 5,
     y_position = 500,
     frame_size = (1080, 1920),
