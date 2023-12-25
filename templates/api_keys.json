@@ -1,10 +1,16 @@
 {
-    "eleven_labs_zach": "",
-    "zach_voice_id": "",
-    "eleven_labs_nick": "",
-    "nick_voice_id": "",
-    "eleven_labs_channel": "",
-    "channel_voice_id": "",
+    "voice_api_keys":
+    {
+        "eleven_labs_1": "",
+        "eleven_labs_2": "",
+        "eleven_labs_3": ""
+    },
+    "voice_ids":
+    {
+        "voice_id_1": "",
+        "voice_id_2": "",
+        "voice_id_3": ""
+    },
     "google_api": "",
     "chatgpt": ""
 }
