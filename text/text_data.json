@@ -1,97 +1,112 @@
 [
     {
-        "word": "Watch",
+        "word": "Birthday",
         "start": 0.0,
-        "end": 0.46
+        "end": 0.74
     },
     {
-        "word": "these",
-        "start": 0.46,
-        "end": 0.72
+        "word": "Serenade",
+        "start": 0.74,
+        "end": 1.16
     },
     {
-        "word": "incredible",
-        "start": 0.72,
-        "end": 1.22
+        "word": "for",
+        "start": 1.16,
+        "end": 1.38
     },
     {
-        "word": "pool",
-        "start": 1.22,
-        "end": 1.5
+        "word": "the",
+        "start": 1.38,
+        "end": 1.6
     },
     {
-        "word": "skills",
-        "start": 1.5,
-        "end": 1.82
+        "word": "Goodest",
+        "start": 1.6,
+        "end": 1.94
     },
     {
-        "word": "unfold",
-        "start": 1.82,
-        "end": 2.28
+        "word": "Boy.",
+        "start": 1.94,
+        "end": 2.3
+    },
+    {
+        "word": "Join",
+        "start": 2.6,
+        "end": 2.76
+    },
+    {
+        "word": "the",
+        "start": 2.76,
+        "end": 2.98
+    },
+    {
+        "word": "celebration",
+        "start": 2.98,
+        "end": 3.42
     },
     {
         "word": "as",
-        "start": 2.28,
-        "end": 2.48
+        "start": 3.42,
+        "end": 3.68
     },
     {
-        "word": "this",
-        "start": 2.48,
-        "end": 2.7
+        "word": "our",
+        "start": 3.68,
+        "end": 3.92
     },
     {
-        "word": "guy",
-        "start": 2.7,
-        "end": 2.82
+        "word": "furry",
+        "start": 3.92,
+        "end": 4.14
     },
     {
-        "word": "makes",
-        "start": 2.82,
-        "end": 3.04
+        "word": "friend",
+        "start": 4.14,
+        "end": 4.5
+    },
+    {
+        "word": "gets",
+        "start": 4.5,
+        "end": 4.7
+    },
+    {
+        "word": "a",
+        "start": 4.7,
+        "end": 5.04
+    },
+    {
+        "word": "special",
+        "start": 5.04,
+        "end": 5.34
+    },
+    {
+        "word": "song",
+        "start": 5.34,
+        "end": 5.68
+    },
+    {
+        "word": "and",
+        "start": 5.68,
+        "end": 5.94
+    },
+    {
+        "word": "blows",
+        "start": 5.94,
+        "end": 6.16
+    },
+    {
+        "word": "out",
+        "start": 6.16,
+        "end": 6.38
     },
     {
         "word": "the",
-        "start": 3.04,
-        "end": 3.26
+        "start": 6.38,
+        "end": 6.5
     },
     {
-        "word": "balls",
-        "start": 3.26,
-        "end": 3.48
-    },
-    {
-        "word": "dance",
-        "start": 3.48,
-        "end": 3.82
-    },
-    {
-        "word": "to",
-        "start": 3.82,
-        "end": 3.96
-    },
-    {
-        "word": "his",
-        "start": 3.96,
-        "end": 4.18
-    },
-    {
-        "word": "beat",
-        "start": 4.18,
-        "end": 4.34
-    },
-    {
-        "word": "after",
-        "start": 4.34,
-        "end": 4.72
-    },
-    {
-        "word": "the",
-        "start": 4.72,
-        "end": 4.96
-    },
-    {
-        "word": "break.",
-        "start": 4.96,
-        "end": 5.14
+        "word": "candles.",
+        "start": 6.5,
+        "end": 6.8
     }
 ]

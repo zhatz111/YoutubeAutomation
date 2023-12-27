@@ -10,8 +10,8 @@ from text_speech import generate_speech # pylint: disable=import-error
 parent_dir = Path.cwd()
 
 # Variables that need to be changed for each new video
-TIKTOK_URL = "https://www.tiktok.com/@genipool14/video/7282364795297254657"
-VIDEO_OUTPUT_NAME = "vid_12_12252023"
+TIKTOK_URL = "https://www.tiktok.com/@rubirobelo/video/7310773934952041771"
+VIDEO_OUTPUT_NAME = "vid_15_12262023"
 
 # Variaales that should be left alone unless changing download directory or
 # script location
@@ -31,10 +31,10 @@ video_file_path = tiktok_downloader(
 )
 
 generate_speech(
-    api_key = api_keys["voice_api_keys"]["eleven_labs_2"],
+    api_key = api_keys["voice_api_keys"]["eleven_labs_3"],
     text_file_path = VIDEO_SCRIPT,
     output_filename = AUDIO_FILE_PATH,
-    voice_id = api_keys["voice_ids"]["voice_id_2"],
+    voice_id = api_keys["voice_ids"]["voice_id_3"],
 )
 
 forced_align(
@@ -56,8 +56,8 @@ main(
     stroke_size = 5,
     y_position = 500,
     frame_size = (1080, 1920),
-    volume = 0.2,
+    volume = 0.5,
     fps = 30,
-    codec = "libx264",
+    codec = "h264_nvenc",
     audio_codec = "libmp3lame",
 )

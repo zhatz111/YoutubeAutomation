@@ -256,7 +256,7 @@ def create_caption(
             word_width, word_height = word_clip.size
             space_width, _ = word_clip_space.size
 
-            if x_pos + word_width + space_width > frame_width - 1.3 * x_buffer:
+            if x_pos + word_width + space_width > frame_width: #- 1.3 * x_buffer
                 # Move to the next line
                 y_pos = y_pos + word_height + 40
 
