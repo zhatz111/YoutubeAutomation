@@ -27,6 +27,7 @@ pip install -r requirements.txt
 - "ffmpeg.exe" is another executable required. The download can be found at [ffmpeg](https://ffmpeg.org/download.html). 
     - The correct file to download are the already compiled executables, do not download the ".tar.xz" file as it will not work for our purposes.
     - Hover over the operating system that you are using in the "Get packages & executable files" and download the most recent build.
+- Need to download [ImageMagick](https://imagemagick.org/script/download.php#macosx) as well.
 
 ## Required Files
 

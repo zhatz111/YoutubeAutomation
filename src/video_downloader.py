@@ -20,7 +20,7 @@ file in the specified directory.
 import os
 import glob
 import time
-from pathlib import Path
+from pathlib import Path, WindowsPath
 from selenium import webdriver  # pylint: disable=import-error
 from selenium.webdriver.common.by import By  # pylint: disable=import-error
 from selenium.webdriver.chrome.service import Service  # pylint: disable=import-error
@@ -52,18 +52,18 @@ def rename_most_recent_file(new_dir, new_name):
     '''
 
     # Ensure the directory ends with a slash
-    new_dir = str(new_dir)
-    if not new_dir.endswith('\\'):
-        new_dir += "\\"
+    # new_dir = str(new_dir)
+    # if not new_dir.endswith('\\'):
+    #     new_dir += "\\"
 
     # List all files in the directory
-    files = glob.glob(new_dir + '*')
+    files = glob.glob(str(new_dir) + "/*")
 
     # Filter out directories, only keep files
     files = [f for f in files if os.path.isfile(f)]
 
     if not files:
-        print("No files found in the directory.")
+        print("No Video files found in the directory.")
         return
 
     # Sort files by creation time in descending order
@@ -73,16 +73,17 @@ def rename_most_recent_file(new_dir, new_name):
     most_recent_file = files[0]
 
     # Extract the extension from the most recent file
-    _, file_extension = os.path.splitext(most_recent_file)
+    file_extension = Path(most_recent_file).suffix
 
     # Create new file path with the same extension
-    new_file_path = os.path.join(new_dir, new_name + file_extension)
+    # new_file_path = os.path.join(new_dir, new_name + file_extension)
+    new_file_path = new_dir / f"{new_name}{file_extension}"
 
     # Rename the file
-    os.rename(most_recent_file, new_file_path)
+    os.rename(most_recent_file, str(new_file_path))
     # print(f"Renamed '{most_recent_file}' to '{new_file_path}'")
 
-    return new_file_path
+    return str(new_file_path)
 
 def tiktok_downloader(tiktok_url: str, download_dir: str):
     '''The `tiktok_downloader` function downloads a TikTok video from a given URL and saves it to a
@@ -102,16 +103,32 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
         the file path of the downloaded TikTok video.
     
     '''
-    vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
-    creator = tiktok_url.split("/")[-3][1:]
-    filename = f"{creator}-{vid_num}"
-    vid_dir = os.listdir(download_dir)
-    if f"{filename}.mp4" in vid_dir:
-        print("Using existing Video file!")
-        return download_dir / f"{filename}.mp4"
+
+    #check if the link is an instagram or tiktok video
+    split_url = tiktok_url.split("/")
+    website = split_url[2].split(".")
+
+    if website == "tiktok":
+        vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
+        creator = tiktok_url.split("/")[-3][1:]
+        filename = f"{creator}-{vid_num}"
+        vid_dir = os.listdir(download_dir)
+        if f"{filename}.mp4" in vid_dir:
+            print("Using existing Video file!")
+            return download_dir / f"{filename}.mp4"
+    else:
+        vid_num = tiktok_url.split("/")[-1]
+        filename = f"instagram-{vid_num}"
+        vid_dir = os.listdir(download_dir)
+        if f"{filename}.mp4" in vid_dir:
+            print("Using existing Video file!")
+            return download_dir / f"{filename}.mp4"
     
     print(parent_dir)
-    service = Service(executable_path= str(parent_dir / "chromedriver.exe"))
+    if isinstance(parent_dir, WindowsPath):
+        service = Service(executable_path= str(parent_dir / "chromedriver.exe"))
+    else:
+        service = Service(executable_path= str(parent_dir / "chromedriver"))
     prefs = {"download.default_directory": str(download_dir)}
     options = webdriver.ChromeOptions()
     options.add_argument("--window-size=1920,1080")
@@ -119,7 +136,10 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
     # options.add_argument("--headless")
     options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(service=service, options=options)
-    driver.get("https://www.veed.io/tools/tiktok-downloader")
+    if website == "tiktok":
+        driver.get("https://www.veed.io/tools/tiktok-downloader")
+    else:
+        driver.get("https://www.veed.io/tools/instagram-downloader")
 
     # Find the textbox using its name, ID, or other attributes
     textbox = driver.find_element(By.NAME, "content-url")

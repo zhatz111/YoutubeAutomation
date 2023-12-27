@@ -2,3 +2,9 @@
 
 need to install opencv-python if you want to resize images
 only get 10000 characters per month for eleven labs so need to switch between api keys
+
+use this codec to increase render speed on nvidia gpu: codec='h264_nvenc'
+
+need to make sure to download ImageMagick as well!
+
+Baby Pig's Playful Spin! #animals #pets #trending #shorts #reels

@@ -5,93 +5,128 @@
         "end": 0.46
     },
     {
-        "word": "these",
+        "word": "this",
         "start": 0.46,
-        "end": 0.72
+        "end": 0.74
     },
     {
-        "word": "incredible",
-        "start": 0.72,
-        "end": 1.22
+        "word": "baby",
+        "start": 0.74,
+        "end": 1.08
     },
     {
-        "word": "pool",
-        "start": 1.22,
+        "word": "pig's",
+        "start": 1.08,
         "end": 1.5
     },
     {
-        "word": "skills",
+        "word": "pure",
         "start": 1.5,
-        "end": 1.82
+        "end": 1.76
     },
     {
-        "word": "unfold",
-        "start": 1.82,
-        "end": 2.28
+        "word": "joy",
+        "start": 1.76,
+        "end": 2.04
     },
     {
-        "word": "as",
-        "start": 2.28,
-        "end": 2.48
+        "word": "in",
+        "start": 2.04,
+        "end": 2.16
     },
     {
-        "word": "this",
-        "start": 2.48,
-        "end": 2.7
+        "word": "a",
+        "start": 2.16,
+        "end": 2.38
     },
     {
-        "word": "guy",
-        "start": 2.7,
-        "end": 2.82
+        "word": "playful",
+        "start": 2.38,
+        "end": 2.66
     },
     {
-        "word": "makes",
-        "start": 2.82,
+        "word": "twirl.",
+        "start": 2.66,
         "end": 3.04
     },
     {
-        "word": "the",
-        "start": 3.04,
-        "end": 3.26
+        "word": "A",
+        "start": 3.58,
+        "end": 3.76
     },
     {
-        "word": "balls",
-        "start": 3.26,
-        "end": 3.48
-    },
-    {
-        "word": "dance",
-        "start": 3.48,
-        "end": 3.82
-    },
-    {
-        "word": "to",
-        "start": 3.82,
+        "word": "special",
+        "start": 3.76,
         "end": 3.96
     },
     {
-        "word": "his",
+        "word": "moment",
         "start": 3.96,
-        "end": 4.18
+        "end": 4.26
     },
     {
-        "word": "beat",
-        "start": 4.18,
-        "end": 4.34
+        "word": "of",
+        "start": 4.26,
+        "end": 4.56
     },
     {
-        "word": "after",
-        "start": 4.34,
-        "end": 4.72
+        "word": "fun",
+        "start": 4.56,
+        "end": 4.68
     },
     {
-        "word": "the",
-        "start": 4.72,
-        "end": 4.96
+        "word": "and",
+        "start": 4.68,
+        "end": 4.9
     },
     {
-        "word": "break.",
-        "start": 4.96,
-        "end": 5.14
+        "word": "love",
+        "start": 4.9,
+        "end": 5.06
+    },
+    {
+        "word": "between",
+        "start": 5.06,
+        "end": 5.34
+    },
+    {
+        "word": "a",
+        "start": 5.34,
+        "end": 5.6
+    },
+    {
+        "word": "pet",
+        "start": 5.6,
+        "end": 5.8
+    },
+    {
+        "word": "piglet",
+        "start": 5.8,
+        "end": 6.12
+    },
+    {
+        "word": "and",
+        "start": 6.12,
+        "end": 6.3
+    },
+    {
+        "word": "its",
+        "start": 6.3,
+        "end": 6.5
+    },
+    {
+        "word": "owner.",
+        "start": 6.5,
+        "end": 6.7
+    },
+    {
+        "word": "So",
+        "start": 7.12,
+        "end": 7.56
+    },
+    {
+        "word": "adorable.",
+        "start": 7.56,
+        "end": 8.12
     }
 ]
