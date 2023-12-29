@@ -20,7 +20,7 @@ file in the specified directory.
 import os
 import glob
 import time
-from pathlib import Path, WindowsPath
+from pathlib import Path, WindowsPath, PosixPath
 from selenium import webdriver  # pylint: disable=import-error
 from selenium.webdriver.common.by import By  # pylint: disable=import-error
 from selenium.webdriver.chrome.service import Service  # pylint: disable=import-error
@@ -31,7 +31,6 @@ from selenium.webdriver.support import ( # pylint: disable=import-error
 
 # Determine parent path of repository
 parent_dir = Path.cwd()
-
 
 def rename_most_recent_file(new_dir, new_name):
     '''The function `rename_most_recent_file` renames the most recent file in a given directory with a new
@@ -108,7 +107,14 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
     split_url = tiktok_url.split("/")
     website = split_url[2].split(".")
 
-    if website == "tiktok":
+    if website == "instagram":
+        vid_num = tiktok_url.split("/")[-1]
+        filename = f"instagram-{vid_num}"
+        vid_dir = os.listdir(download_dir)
+        if f"{filename}.mp4" in vid_dir:
+            print("Using existing Video file!")
+            return download_dir / f"{filename}.mp4"
+    else:
         vid_num = tiktok_url.rsplit("/", maxsplit=1)[-1]
         creator = tiktok_url.split("/")[-3][1:]
         filename = f"{creator}-{vid_num}"
@@ -116,24 +122,18 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
         if f"{filename}.mp4" in vid_dir:
             print("Using existing Video file!")
             return download_dir / f"{filename}.mp4"
-    else:
-        vid_num = tiktok_url.split("/")[-1]
-        filename = f"instagram-{vid_num}"
-        vid_dir = os.listdir(download_dir)
-        if f"{filename}.mp4" in vid_dir:
-            print("Using existing Video file!")
-            return download_dir / f"{filename}.mp4"
-    
-    print(parent_dir)
+
     if isinstance(parent_dir, WindowsPath):
         service = Service(executable_path= str(parent_dir / "chromedriver.exe"))
-    else:
+    elif isinstance(parent_dir, PosixPath):
         service = Service(executable_path= str(parent_dir / "chromedriver"))
+    else:
+        service = Service()
+
     prefs = {"download.default_directory": str(download_dir)}
     options = webdriver.ChromeOptions()
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--start-maximized")
-    # options.add_argument("--headless")
     options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(service=service, options=options)
     if website == "tiktok":

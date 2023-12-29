@@ -10,13 +10,8 @@ from text_speech import generate_speech # pylint: disable=import-error
 parent_dir = Path.cwd()
 
 # Variables that need to be changed for each new video
-<<<<<<< HEAD
-TIKTOK_URL = "https://www.tiktok.com/@rubirobelo/video/7310773934952041771"
-VIDEO_OUTPUT_NAME = "vid_15_12262023"
-=======
-TIKTOK_URL = "https://www.instagram.com/reel/CzTQh4XBsJU"
-VIDEO_OUTPUT_NAME = "vid_17_12262023"
->>>>>>> 34804e2bc6fa964dc9df36dcc5bef199ee0aaf6a
+TIKTOK_URL = "https://www.tiktok.com/@hun.asmr77/video/7295811065256922401"
+VIDEO_OUTPUT_NAME = "vid_21_12272023"
 
 # Variaales that should be left alone unless changing download directory or
 # script location
@@ -59,13 +54,9 @@ main(
     stroke_color = "black",
     bgcolor = "#00cc00", # #00cc00, #75BFEC
     stroke_size = 5,
-    y_position = 700,
+    y_position = 500,
     frame_size = (1080, 1920),
-<<<<<<< HEAD
-    volume = 0.5,
-=======
-    volume = 0.6,
->>>>>>> 34804e2bc6fa964dc9df36dcc5bef199ee0aaf6a
+    volume = 0.3,
     fps = 30,
     codec = "h264_nvenc",
     audio_codec = "libmp3lame",
