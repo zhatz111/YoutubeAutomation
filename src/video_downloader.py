@@ -105,7 +105,7 @@ def tiktok_downloader(tiktok_url: str, download_dir: str):
 
     #check if the link is an instagram or tiktok video
     split_url = tiktok_url.split("/")
-    website = split_url[2].split(".")
+    website = split_url[2].split(".")[1]
 
     if website == "instagram":
         vid_num = tiktok_url.split("/")[-1]
