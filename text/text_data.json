@@ -1,152 +1,62 @@
 [
     {
-        "word": "Get",
+        "word": "Wait,",
         "start": 0.0,
-        "end": 0.32
+        "end": 0.28
     },
     {
-        "word": "ready",
-        "start": 0.32,
-        "end": 0.6
+        "word": "stop",
+        "start": 0.48,
+        "end": 0.58
     },
     {
-        "word": "for",
-        "start": 0.6,
-        "end": 0.86
+        "word": "scrolling!",
+        "start": 0.58,
+        "end": 0.98
     },
     {
-        "word": "a",
-        "start": 0.86,
-        "end": 1.06
+        "word": "Look",
+        "start": 1.36,
+        "end": 1.48
     },
     {
-        "word": "perfect",
-        "start": 1.06,
-        "end": 1.74
+        "word": "at",
+        "start": 1.48,
+        "end": 1.62
     },
     {
-        "word": "prank!",
-        "start": 1.74,
-        "end": 2.38
+        "word": "these",
+        "start": 1.62,
+        "end": 1.82
     },
     {
-        "word": "Watch",
-        "start": 3.02,
-        "end": 3.2
+        "word": "clumsy",
+        "start": 1.82,
+        "end": 2.22
     },
     {
-        "word": "as",
-        "start": 3.2,
-        "end": 3.48
+        "word": "dancing",
+        "start": 2.22,
+        "end": 2.62
     },
     {
-        "word": "Cat",
-        "start": 3.48,
-        "end": 3.72
+        "word": "animals",
+        "start": 2.62,
+        "end": 2.96
     },
     {
-        "word": "Dad",
-        "start": 3.72,
-        "end": 3.94
+        "word": "do",
+        "start": 2.96,
+        "end": 3.14
     },
     {
-        "word": "surprises",
-        "start": 3.94,
-        "end": 4.46
+        "word": "their",
+        "start": 3.14,
+        "end": 3.4
     },
     {
-        "word": "his",
-        "start": 4.46,
-        "end": 4.78
-    },
-    {
-        "word": "furry",
-        "start": 4.78,
-        "end": 5.02
-    },
-    {
-        "word": "friends",
-        "start": 5.02,
-        "end": 5.36
-    },
-    {
-        "word": "with",
-        "start": 5.36,
-        "end": 5.54
-    },
-    {
-        "word": "a",
-        "start": 5.54,
-        "end": 5.7
-    },
-    {
-        "word": "cat",
-        "start": 5.7,
-        "end": 5.96
-    },
-    {
-        "word": "mask.",
-        "start": 5.96,
-        "end": 6.36
-    },
-    {
-        "word": "Their",
-        "start": 6.78,
-        "end": 7.04
-    },
-    {
-        "word": "reactions?",
-        "start": 7.04,
-        "end": 7.54
-    },
-    {
-        "word": "Absolutely",
-        "start": 8.379999999999999,
-        "end": 9.02
-    },
-    {
-        "word": "hilarious!",
-        "start": 9.02,
-        "end": 9.66
-    },
-    {
-        "word": "Tune",
-        "start": 10.1,
-        "end": 10.4
-    },
-    {
-        "word": "in",
-        "start": 10.4,
-        "end": 10.72
-    },
-    {
-        "word": "for",
-        "start": 10.72,
-        "end": 10.98
-    },
-    {
-        "word": "a",
-        "start": 10.98,
-        "end": 11.16
-    },
-    {
-        "word": "meow",
-        "start": 11.16,
-        "end": 11.52
-    },
-    {
-        "word": "meant",
-        "start": 11.52,
-        "end": 11.78
-    },
-    {
-        "word": "of",
-        "start": 11.78,
-        "end": 12.06
-    },
-    {
-        "word": "laughter!",
-        "start": 12.06,
-        "end": 12.46
+        "word": "thing!",
+        "start": 3.4,
+        "end": 3.64
     }
 ]

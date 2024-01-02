@@ -4,13 +4,13 @@ import json
 from pathlib import Path
 from video_downloader import tiktok_downloader # pylint: disable=import-error
 from closed_captions import forced_align, main # pylint: disable=import-error
-from text_speech import generate_speech # pylint: disable=import-error
+from text_speech import generate_speech, generate_speech_2 # pylint: disable=import-error
 
 # Determine parent path of repository
 parent_dir = Path.cwd()
 
 # Variables that need to be changed for each new video
-TIKTOK_URL = "https://www.tiktok.com/@viralfunny15_/video/7291683417685511457"
+TIKTOK_URL = "https://www.tiktok.com/@funnyvids2k21/video/7220420142868466950"
 VIDEO_OUTPUT_NAME = "vid_23_12312023"
 
 # Variaales that should be left alone unless changing download directory or
@@ -30,11 +30,11 @@ video_file_path = tiktok_downloader(
     download_dir=DOWNLOAD_DIR,
 )
 
-generate_speech(
-    api_key = api_keys["voice_api_keys"]["eleven_labs_3"],
+generate_speech_2(
+    api_key = api_keys["voice_api_keys"]["eleven_labs_2"],
     text_file_path = VIDEO_SCRIPT,
     output_filename = AUDIO_FILE_PATH,
-    voice_id = api_keys["voice_ids"]["voice_id_3"],
+    voice_id = api_keys["voice_ids"]["voice_id_2"],
 )
 
 forced_align(
@@ -58,6 +58,6 @@ main(
     frame_size = (1080, 1920),
     volume = .3,
     fps = 30,
-    codec = "h264_nvenc",
+    codec = "libx264",
     audio_codec = "libmp3lame",
 )
