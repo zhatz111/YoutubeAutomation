@@ -2,61 +2,141 @@
     {
         "word": "Wait,",
         "start": 0.0,
-        "end": 0.28
+        "end": 0.36
     },
     {
         "word": "stop",
-        "start": 0.48,
-        "end": 0.58
+        "start": 0.64,
+        "end": 0.74
     },
     {
-        "word": "scrolling!",
-        "start": 0.58,
-        "end": 0.98
+        "word": "scrolling",
+        "start": 0.74,
+        "end": 1.12
     },
     {
-        "word": "Look",
-        "start": 1.36,
-        "end": 1.48
+        "word": "endlessly",
+        "start": 1.12,
+        "end": 1.58
     },
     {
-        "word": "at",
-        "start": 1.48,
-        "end": 1.62
+        "word": "and",
+        "start": 1.58,
+        "end": 1.84
+    },
+    {
+        "word": "watch",
+        "start": 1.84,
+        "end": 2.04
     },
     {
         "word": "these",
-        "start": 1.62,
-        "end": 1.82
+        "start": 2.04,
+        "end": 2.32
     },
     {
-        "word": "clumsy",
-        "start": 1.82,
-        "end": 2.22
+        "word": "funny",
+        "start": 2.32,
+        "end": 2.58
     },
     {
-        "word": "dancing",
-        "start": 2.22,
-        "end": 2.62
+        "word": "animals.",
+        "start": 2.58,
+        "end": 3.04
     },
     {
-        "word": "animals",
-        "start": 2.62,
-        "end": 2.96
+        "word": "This",
+        "start": 3.5,
+        "end": 3.68
     },
     {
-        "word": "do",
-        "start": 2.96,
-        "end": 3.14
+        "word": "will",
+        "start": 3.68,
+        "end": 3.88
     },
     {
-        "word": "their",
-        "start": 3.14,
-        "end": 3.4
+        "word": "for",
+        "start": 3.88,
+        "end": 4.06
     },
     {
-        "word": "thing!",
-        "start": 3.4,
-        "end": 3.64
+        "word": "sure",
+        "start": 4.06,
+        "end": 4.28
+    },
+    {
+        "word": "brighten",
+        "start": 4.28,
+        "end": 4.6
+    },
+    {
+        "word": "up",
+        "start": 4.6,
+        "end": 4.82
+    },
+    {
+        "word": "your",
+        "start": 4.82,
+        "end": 5.04
+    },
+    {
+        "word": "day,",
+        "start": 5.04,
+        "end": 5.38
+    },
+    {
+        "word": "especially",
+        "start": 5.74,
+        "end": 6.06
+    },
+    {
+        "word": "when",
+        "start": 6.06,
+        "end": 6.26
+    },
+    {
+        "word": "you",
+        "start": 6.26,
+        "end": 6.4
+    },
+    {
+        "word": "see",
+        "start": 6.4,
+        "end": 6.52
+    },
+    {
+        "word": "what",
+        "start": 6.52,
+        "end": 6.7
+    },
+    {
+        "word": "the",
+        "start": 6.7,
+        "end": 6.9
+    },
+    {
+        "word": "cat",
+        "start": 6.9,
+        "end": 7.04
+    },
+    {
+        "word": "does",
+        "start": 7.04,
+        "end": 7.26
+    },
+    {
+        "word": "to",
+        "start": 7.26,
+        "end": 7.5
+    },
+    {
+        "word": "the",
+        "start": 7.5,
+        "end": 7.68
+    },
+    {
+        "word": "seal.",
+        "start": 7.68,
+        "end": 7.88
     }
 ]
