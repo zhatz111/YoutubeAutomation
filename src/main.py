@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from video_downloader import tiktok_downloader # pylint: disable=import-error
 from closed_captions import forced_align, main # pylint: disable=import-error
-from text_speech import generate_speech, generate_speech_2 # pylint: disable=import-error
+from text_speech import generate_speech, generate_speech_2 # pylint: disable=import-error, unused-import
 
 # Determine parent path of repository
 parent_dir = Path.cwd()
