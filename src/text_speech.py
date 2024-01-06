@@ -25,6 +25,8 @@ import os
 import json
 from pathlib import Path
 import http.client
+from elevenlabs import generate
+from elevenlabs import set_api_key
 
 # Function to send a request to the API and save the speech
 def generate_speech(
@@ -101,7 +103,37 @@ def generate_speech(
             file.write(response.read())
         print("Speech generated successfully!")
     else:
-        print("Error:", response.status)
+        print(f"Error: {response.status}, {response.reason}")
 
     # Close the connection
     conn.close()
+
+def generate_speech_2(
+    api_key,
+    text_file_path: Path,
+    output_filename: Path,
+    voice_id: str,
+):
+
+    # set_api_key(api_key)
+
+    audio_dir = os.listdir(str(output_filename.parent))
+    if f"{output_filename.name}.mp3" in audio_dir:
+        print("Using existing audio file.")
+        return
+
+    try:
+        with open(str(text_file_path), "r", encoding="utf-8") as file:
+            text = file.read().strip()
+    except FileNotFoundError:
+        print("Text file not found!")
+
+    audio = generate(
+        text=text,
+        voice="Adam",
+        model="eleven_multilingual_v2"
+    )
+
+    with open(f"{output_filename}.mp3", "wb") as file:
+        file.write(audio)
+    print("Speech generated successfully!")

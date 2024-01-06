@@ -1,152 +1,142 @@
 [
     {
-        "word": "Get",
+        "word": "Wait,",
         "start": 0.0,
-        "end": 0.32
+        "end": 0.36
     },
     {
-        "word": "ready",
-        "start": 0.32,
-        "end": 0.6
+        "word": "stop",
+        "start": 0.64,
+        "end": 0.74
+    },
+    {
+        "word": "scrolling",
+        "start": 0.74,
+        "end": 1.12
+    },
+    {
+        "word": "endlessly",
+        "start": 1.12,
+        "end": 1.58
+    },
+    {
+        "word": "and",
+        "start": 1.58,
+        "end": 1.84
+    },
+    {
+        "word": "watch",
+        "start": 1.84,
+        "end": 2.04
+    },
+    {
+        "word": "these",
+        "start": 2.04,
+        "end": 2.32
+    },
+    {
+        "word": "funny",
+        "start": 2.32,
+        "end": 2.58
+    },
+    {
+        "word": "animals.",
+        "start": 2.58,
+        "end": 3.04
+    },
+    {
+        "word": "This",
+        "start": 3.5,
+        "end": 3.68
+    },
+    {
+        "word": "will",
+        "start": 3.68,
+        "end": 3.88
     },
     {
         "word": "for",
-        "start": 0.6,
-        "end": 0.86
+        "start": 3.88,
+        "end": 4.06
     },
     {
-        "word": "a",
-        "start": 0.86,
-        "end": 1.06
+        "word": "sure",
+        "start": 4.06,
+        "end": 4.28
     },
     {
-        "word": "perfect",
-        "start": 1.06,
-        "end": 1.74
+        "word": "brighten",
+        "start": 4.28,
+        "end": 4.6
     },
     {
-        "word": "prank!",
-        "start": 1.74,
-        "end": 2.38
+        "word": "up",
+        "start": 4.6,
+        "end": 4.82
     },
     {
-        "word": "Watch",
-        "start": 3.02,
-        "end": 3.2
+        "word": "your",
+        "start": 4.82,
+        "end": 5.04
     },
     {
-        "word": "as",
-        "start": 3.2,
-        "end": 3.48
+        "word": "day,",
+        "start": 5.04,
+        "end": 5.38
     },
     {
-        "word": "Cat",
-        "start": 3.48,
-        "end": 3.72
+        "word": "especially",
+        "start": 5.74,
+        "end": 6.06
     },
     {
-        "word": "Dad",
-        "start": 3.72,
-        "end": 3.94
+        "word": "when",
+        "start": 6.06,
+        "end": 6.26
     },
     {
-        "word": "surprises",
-        "start": 3.94,
-        "end": 4.46
+        "word": "you",
+        "start": 6.26,
+        "end": 6.4
     },
     {
-        "word": "his",
-        "start": 4.46,
-        "end": 4.78
+        "word": "see",
+        "start": 6.4,
+        "end": 6.52
     },
     {
-        "word": "furry",
-        "start": 4.78,
-        "end": 5.02
+        "word": "what",
+        "start": 6.52,
+        "end": 6.7
     },
     {
-        "word": "friends",
-        "start": 5.02,
-        "end": 5.36
-    },
-    {
-        "word": "with",
-        "start": 5.36,
-        "end": 5.54
-    },
-    {
-        "word": "a",
-        "start": 5.54,
-        "end": 5.7
+        "word": "the",
+        "start": 6.7,
+        "end": 6.9
     },
     {
         "word": "cat",
-        "start": 5.7,
-        "end": 5.96
-    },
-    {
-        "word": "mask.",
-        "start": 5.96,
-        "end": 6.36
-    },
-    {
-        "word": "Their",
-        "start": 6.78,
+        "start": 6.9,
         "end": 7.04
     },
     {
-        "word": "reactions?",
+        "word": "does",
         "start": 7.04,
-        "end": 7.54
+        "end": 7.26
     },
     {
-        "word": "Absolutely",
-        "start": 8.379999999999999,
-        "end": 9.02
+        "word": "to",
+        "start": 7.26,
+        "end": 7.5
     },
     {
-        "word": "hilarious!",
-        "start": 9.02,
-        "end": 9.66
+        "word": "the",
+        "start": 7.5,
+        "end": 7.68
     },
     {
-        "word": "Tune",
-        "start": 10.1,
-        "end": 10.4
-    },
-    {
-        "word": "in",
-        "start": 10.4,
-        "end": 10.72
-    },
-    {
-        "word": "for",
-        "start": 10.72,
-        "end": 10.98
-    },
-    {
-        "word": "a",
-        "start": 10.98,
-        "end": 11.16
-    },
-    {
-        "word": "meow",
-        "start": 11.16,
-        "end": 11.52
-    },
-    {
-        "word": "meant",
-        "start": 11.52,
-        "end": 11.78
-    },
-    {
-        "word": "of",
-        "start": 11.78,
-        "end": 12.06
-    },
-    {
-        "word": "laughter!",
-        "start": 12.06,
-        "end": 12.46
+        "word": "seal.",
+        "start": 7.68,
+        "end": 7.88
     }
 ]
