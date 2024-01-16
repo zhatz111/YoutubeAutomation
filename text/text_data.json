@@ -1,142 +1,1682 @@
 [
     {
-        "word": "Wait,",
+        "word": "I'm",
         "start": 0.0,
-        "end": 0.36
+        "end": 0.28
     },
     {
-        "word": "stop",
-        "start": 0.64,
-        "end": 0.74
+        "word": "a",
+        "start": 0.28,
+        "end": 0.52
     },
     {
-        "word": "scrolling",
-        "start": 0.74,
-        "end": 1.12
+        "word": "recovering",
+        "start": 0.52,
+        "end": 0.94
     },
     {
-        "word": "endlessly",
-        "start": 1.12,
-        "end": 1.58
+        "word": "alcoholic",
+        "start": 0.94,
+        "end": 1.54
+    },
+    {
+        "word": "of",
+        "start": 1.54,
+        "end": 1.76
+    },
+    {
+        "word": "two",
+        "start": 1.76,
+        "end": 2.06
+    },
+    {
+        "word": "years,",
+        "start": 2.06,
+        "end": 2.38
     },
     {
         "word": "and",
-        "start": 1.58,
-        "end": 1.84
+        "start": 2.76,
+        "end": 2.8
     },
     {
-        "word": "watch",
-        "start": 1.84,
-        "end": 2.04
+        "word": "there",
+        "start": 2.8,
+        "end": 2.96
     },
     {
-        "word": "these",
-        "start": 2.04,
-        "end": 2.32
+        "word": "has",
+        "start": 2.96,
+        "end": 3.14
     },
     {
-        "word": "funny",
-        "start": 2.32,
-        "end": 2.58
+        "word": "been",
+        "start": 3.14,
+        "end": 3.28
     },
     {
-        "word": "animals.",
-        "start": 2.58,
-        "end": 3.04
+        "word": "a",
+        "start": 3.28,
+        "end": 3.44
     },
     {
-        "word": "This",
-        "start": 3.5,
-        "end": 3.68
+        "word": "long",
+        "start": 3.44,
+        "end": 3.62
     },
     {
-        "word": "will",
-        "start": 3.68,
-        "end": 3.88
+        "word": "history",
+        "start": 3.62,
+        "end": 4.04
+    },
+    {
+        "word": "of",
+        "start": 4.04,
+        "end": 4.4
+    },
+    {
+        "word": "alcoholism",
+        "start": 4.4,
+        "end": 4.98
+    },
+    {
+        "word": "and",
+        "start": 4.98,
+        "end": 5.16
+    },
+    {
+        "word": "addiction",
+        "start": 5.16,
+        "end": 5.48
+    },
+    {
+        "word": "in",
+        "start": 5.48,
+        "end": 5.64
+    },
+    {
+        "word": "my",
+        "start": 5.64,
+        "end": 5.88
+    },
+    {
+        "word": "family.",
+        "start": 5.88,
+        "end": 6.2
+    },
+    {
+        "word": "My",
+        "start": 6.54,
+        "end": 6.72
+    },
+    {
+        "word": "now",
+        "start": 6.72,
+        "end": 7.02
+    },
+    {
+        "word": "ex",
+        "start": 7.02,
+        "end": 7.3
+    },
+    {
+        "word": "-boyfriend,",
+        "start": 7.3,
+        "end": 7.86
+    },
+    {
+        "word": "who",
+        "start": 8.1,
+        "end": 8.26
+    },
+    {
+        "word": "we'll",
+        "start": 8.26,
+        "end": 8.5
+    },
+    {
+        "word": "call",
+        "start": 8.5,
+        "end": 8.72
+    },
+    {
+        "word": "Sean,",
+        "start": 8.72,
+        "end": 9.12
+    },
+    {
+        "word": "were",
+        "start": 9.46,
+        "end": 9.58
+    },
+    {
+        "word": "together",
+        "start": 9.58,
+        "end": 9.9
     },
     {
         "word": "for",
-        "start": 3.88,
-        "end": 4.06
+        "start": 9.9,
+        "end": 10.14
     },
     {
-        "word": "sure",
-        "start": 4.06,
-        "end": 4.28
+        "word": "almost",
+        "start": 10.14,
+        "end": 10.4
     },
     {
-        "word": "brighten",
-        "start": 4.28,
-        "end": 4.6
+        "word": "a",
+        "start": 10.4,
+        "end": 10.64
     },
     {
-        "word": "up",
-        "start": 4.6,
-        "end": 4.82
+        "word": "year.",
+        "start": 10.64,
+        "end": 10.9
     },
     {
-        "word": "your",
-        "start": 4.82,
-        "end": 5.04
+        "word": "He",
+        "start": 11.16,
+        "end": 11.44
     },
     {
-        "word": "day,",
-        "start": 5.04,
-        "end": 5.38
+        "word": "knows",
+        "start": 11.44,
+        "end": 11.68
     },
     {
-        "word": "especially",
-        "start": 5.74,
-        "end": 6.06
+        "word": "about",
+        "start": 11.68,
+        "end": 11.9
     },
     {
-        "word": "when",
-        "start": 6.06,
-        "end": 6.26
+        "word": "my",
+        "start": 11.9,
+        "end": 12.16
     },
     {
-        "word": "you",
-        "start": 6.26,
-        "end": 6.4
+        "word": "past",
+        "start": 12.16,
+        "end": 12.36
     },
     {
-        "word": "see",
-        "start": 6.4,
-        "end": 6.52
+        "word": "with",
+        "start": 12.36,
+        "end": 12.62
     },
     {
-        "word": "what",
-        "start": 6.52,
-        "end": 6.7
+        "word": "alcohol",
+        "start": 12.62,
+        "end": 13.08
     },
     {
-        "word": "the",
-        "start": 6.7,
-        "end": 6.9
+        "word": "and",
+        "start": 13.08,
+        "end": 13.34
     },
     {
-        "word": "cat",
-        "start": 6.9,
-        "end": 7.04
+        "word": "my",
+        "start": 13.34,
+        "end": 13.52
     },
     {
-        "word": "does",
-        "start": 7.04,
-        "end": 7.26
+        "word": "family's",
+        "start": 13.52,
+        "end": 14.04
+    },
+    {
+        "word": "history",
+        "start": 14.04,
+        "end": 14.4
+    },
+    {
+        "word": "and",
+        "start": 14.4,
+        "end": 14.76
+    },
+    {
+        "word": "was",
+        "start": 14.76,
+        "end": 15.04
+    },
+    {
+        "word": "respectful",
+        "start": 15.04,
+        "end": 15.52
+    },
+    {
+        "word": "of",
+        "start": 15.52,
+        "end": 15.68
+    },
+    {
+        "word": "it.",
+        "start": 15.68,
+        "end": 16.1
+    },
+    {
+        "word": "Or",
+        "start": 16.22,
+        "end": 16.46
+    },
+    {
+        "word": "so",
+        "start": 16.46,
+        "end": 16.62
+    },
+    {
+        "word": "I",
+        "start": 16.62,
+        "end": 16.82
+    },
+    {
+        "word": "thought.",
+        "start": 16.82,
+        "end": 17.06
+    },
+    {
+        "word": "My",
+        "start": 17.34,
+        "end": 17.5
+    },
+    {
+        "word": "birthday",
+        "start": 17.5,
+        "end": 17.8
+    },
+    {
+        "word": "was",
+        "start": 17.8,
+        "end": 18.04
+    },
+    {
+        "word": "two",
+        "start": 18.04,
+        "end": 18.24
+    },
+    {
+        "word": "days",
+        "start": 18.24,
+        "end": 18.48
+    },
+    {
+        "word": "ago,",
+        "start": 18.48,
+        "end": 18.82
+    },
+    {
+        "word": "and",
+        "start": 18.96,
+        "end": 19.24
+    },
+    {
+        "word": "my",
+        "start": 19.24,
+        "end": 19.44
+    },
+    {
+        "word": "boyfriend",
+        "start": 19.44,
+        "end": 19.76
+    },
+    {
+        "word": "was",
+        "start": 19.76,
+        "end": 19.98
+    },
+    {
+        "word": "being",
+        "start": 19.98,
+        "end": 20.24
+    },
+    {
+        "word": "super",
+        "start": 20.24,
+        "end": 20.6
+    },
+    {
+        "word": "sweet.",
+        "start": 20.6,
+        "end": 20.92
+    },
+    {
+        "word": "He",
+        "start": 21.18,
+        "end": 21.42
+    },
+    {
+        "word": "took",
+        "start": 21.42,
+        "end": 21.58
+    },
+    {
+        "word": "me",
+        "start": 21.58,
+        "end": 21.76
+    },
+    {
+        "word": "out",
+        "start": 21.76,
+        "end": 21.92
     },
     {
         "word": "to",
-        "start": 7.26,
-        "end": 7.5
+        "start": 21.92,
+        "end": 22.02
+    },
+    {
+        "word": "my",
+        "start": 22.02,
+        "end": 22.2
+    },
+    {
+        "word": "favorite",
+        "start": 22.2,
+        "end": 22.5
+    },
+    {
+        "word": "restaurant,",
+        "start": 22.5,
+        "end": 22.98
+    },
+    {
+        "word": "and",
+        "start": 23.0,
+        "end": 23.2
+    },
+    {
+        "word": "we",
+        "start": 23.2,
+        "end": 23.38
+    },
+    {
+        "word": "watched",
+        "start": 23.38,
+        "end": 23.58
+    },
+    {
+        "word": "my",
+        "start": 23.58,
+        "end": 23.84
+    },
+    {
+        "word": "favorite",
+        "start": 23.84,
+        "end": 24.08
+    },
+    {
+        "word": "movie",
+        "start": 24.08,
+        "end": 24.34
+    },
+    {
+        "word": "together.",
+        "start": 24.34,
+        "end": 24.76
+    },
+    {
+        "word": "Everything",
+        "start": 25.3,
+        "end": 25.56
+    },
+    {
+        "word": "was",
+        "start": 25.56,
+        "end": 25.82
+    },
+    {
+        "word": "nice",
+        "start": 25.82,
+        "end": 26.14
+    },
+    {
+        "word": "and",
+        "start": 26.14,
+        "end": 26.46
+    },
+    {
+        "word": "romantic",
+        "start": 26.46,
+        "end": 26.96
+    },
+    {
+        "word": "until",
+        "start": 26.96,
+        "end": 27.28
+    },
+    {
+        "word": "it",
+        "start": 27.28,
+        "end": 27.46
+    },
+    {
+        "word": "came",
+        "start": 27.46,
+        "end": 27.6
+    },
+    {
+        "word": "time",
+        "start": 27.6,
+        "end": 27.86
+    },
+    {
+        "word": "for",
+        "start": 27.86,
+        "end": 28.02
+    },
+    {
+        "word": "him",
+        "start": 28.02,
+        "end": 28.18
+    },
+    {
+        "word": "to",
+        "start": 28.18,
+        "end": 28.36
+    },
+    {
+        "word": "give",
+        "start": 28.36,
+        "end": 28.44
+    },
+    {
+        "word": "me",
+        "start": 28.44,
+        "end": 28.62
+    },
+    {
+        "word": "my",
+        "start": 28.62,
+        "end": 28.88
+    },
+    {
+        "word": "gift.",
+        "start": 28.88,
+        "end": 29.16
+    },
+    {
+        "word": "He",
+        "start": 29.16,
+        "end": 29.6
+    },
+    {
+        "word": "got",
+        "start": 29.6,
+        "end": 29.82
+    },
+    {
+        "word": "a",
+        "start": 29.82,
+        "end": 30.0
+    },
+    {
+        "word": "huge",
+        "start": 30.0,
+        "end": 30.34
+    },
+    {
+        "word": "grin",
+        "start": 30.34,
+        "end": 30.62
+    },
+    {
+        "word": "on",
+        "start": 30.62,
+        "end": 30.78
+    },
+    {
+        "word": "his",
+        "start": 30.78,
+        "end": 31.02
+    },
+    {
+        "word": "face",
+        "start": 31.02,
+        "end": 31.3
+    },
+    {
+        "word": "and",
+        "start": 31.3,
+        "end": 31.5
+    },
+    {
+        "word": "ran",
+        "start": 31.5,
+        "end": 31.72
+    },
+    {
+        "word": "out",
+        "start": 31.72,
+        "end": 31.9
+    },
+    {
+        "word": "to",
+        "start": 31.9,
+        "end": 32.06
+    },
+    {
+        "word": "his",
+        "start": 32.06,
+        "end": 32.26
+    },
+    {
+        "word": "car.",
+        "start": 32.26,
+        "end": 32.56
+    },
+    {
+        "word": "This",
+        "start": 32.68,
+        "end": 33.12
+    },
+    {
+        "word": "made",
+        "start": 33.12,
+        "end": 33.28
+    },
+    {
+        "word": "me",
+        "start": 33.28,
+        "end": 33.52
+    },
+    {
+        "word": "sort",
+        "start": 33.52,
+        "end": 33.72
+    },
+    {
+        "word": "of",
+        "start": 33.72,
+        "end": 33.94
+    },
+    {
+        "word": "excited,",
+        "start": 33.94,
+        "end": 34.32
+    },
+    {
+        "word": "and",
+        "start": 34.32,
+        "end": 34.82
+    },
+    {
+        "word": "he",
+        "start": 34.82,
+        "end": 35.02
+    },
+    {
+        "word": "came",
+        "start": 35.02,
+        "end": 35.24
+    },
+    {
+        "word": "inside",
+        "start": 35.24,
+        "end": 35.6
+    },
+    {
+        "word": "and",
+        "start": 35.6,
+        "end": 35.76
+    },
+    {
+        "word": "gave",
+        "start": 35.76,
+        "end": 35.92
+    },
+    {
+        "word": "me",
+        "start": 35.92,
+        "end": 36.1
+    },
+    {
+        "word": "my",
+        "start": 36.1,
+        "end": 36.3
+    },
+    {
+        "word": "gift.",
+        "start": 36.3,
+        "end": 36.6
+    },
+    {
+        "word": "I",
+        "start": 36.92,
+        "end": 37.12
+    },
+    {
+        "word": "opened",
+        "start": 37.12,
+        "end": 37.32
     },
     {
         "word": "the",
-        "start": 7.5,
-        "end": 7.68
+        "start": 37.32,
+        "end": 37.5
     },
     {
-        "word": "seal.",
-        "start": 7.68,
-        "end": 7.88
+        "word": "box,",
+        "start": 37.5,
+        "end": 37.8
+    },
+    {
+        "word": "and",
+        "start": 37.94,
+        "end": 38.14
+    },
+    {
+        "word": "inside",
+        "start": 38.14,
+        "end": 38.48
+    },
+    {
+        "word": "was",
+        "start": 38.48,
+        "end": 38.66
+    },
+    {
+        "word": "a",
+        "start": 38.66,
+        "end": 38.76
+    },
+    {
+        "word": "bottle",
+        "start": 38.76,
+        "end": 38.96
+    },
+    {
+        "word": "of",
+        "start": 38.96,
+        "end": 39.2
+    },
+    {
+        "word": "wine.",
+        "start": 39.2,
+        "end": 39.44
+    },
+    {
+        "word": "My",
+        "start": 39.74,
+        "end": 40.02
+    },
+    {
+        "word": "heart",
+        "start": 40.02,
+        "end": 40.26
+    },
+    {
+        "word": "dropped.",
+        "start": 40.26,
+        "end": 40.7
+    },
+    {
+        "word": "His",
+        "start": 40.98,
+        "end": 41.28
+    },
+    {
+        "word": "smile",
+        "start": 41.28,
+        "end": 41.58
+    },
+    {
+        "word": "grew,",
+        "start": 41.58,
+        "end": 41.92
+    },
+    {
+        "word": "and",
+        "start": 42.02,
+        "end": 42.14
+    },
+    {
+        "word": "he",
+        "start": 42.14,
+        "end": 42.3
+    },
+    {
+        "word": "asked",
+        "start": 42.3,
+        "end": 42.5
+    },
+    {
+        "word": "me",
+        "start": 42.5,
+        "end": 42.64
+    },
+    {
+        "word": "if",
+        "start": 42.64,
+        "end": 42.8
+    },
+    {
+        "word": "I",
+        "start": 42.8,
+        "end": 42.96
+    },
+    {
+        "word": "liked",
+        "start": 42.96,
+        "end": 43.1
+    },
+    {
+        "word": "it.",
+        "start": 43.1,
+        "end": 43.38
+    },
+    {
+        "word": "I",
+        "start": 43.58,
+        "end": 43.74
+    },
+    {
+        "word": "got",
+        "start": 43.74,
+        "end": 43.96
+    },
+    {
+        "word": "angry",
+        "start": 43.96,
+        "end": 44.32
+    },
+    {
+        "word": "and",
+        "start": 44.32,
+        "end": 44.5
+    },
+    {
+        "word": "asked",
+        "start": 44.5,
+        "end": 44.74
+    },
+    {
+        "word": "what",
+        "start": 44.74,
+        "end": 44.92
+    },
+    {
+        "word": "the",
+        "start": 44.92,
+        "end": 45.12
+    },
+    {
+        "word": "fuck",
+        "start": 45.12,
+        "end": 45.22
+    },
+    {
+        "word": "he",
+        "start": 45.22,
+        "end": 45.38
+    },
+    {
+        "word": "was",
+        "start": 45.38,
+        "end": 45.54
+    },
+    {
+        "word": "thinking.",
+        "start": 45.54,
+        "end": 45.86
+    },
+    {
+        "word": "He",
+        "start": 46.24,
+        "end": 46.5
+    },
+    {
+        "word": "told",
+        "start": 46.5,
+        "end": 46.72
+    },
+    {
+        "word": "me",
+        "start": 46.72,
+        "end": 46.92
+    },
+    {
+        "word": "it",
+        "start": 46.92,
+        "end": 47.02
+    },
+    {
+        "word": "was",
+        "start": 47.02,
+        "end": 47.2
+    },
+    {
+        "word": "just",
+        "start": 47.2,
+        "end": 47.44
+    },
+    {
+        "word": "a",
+        "start": 47.44,
+        "end": 47.62
+    },
+    {
+        "word": "joke",
+        "start": 47.62,
+        "end": 47.9
+    },
+    {
+        "word": "and",
+        "start": 47.9,
+        "end": 48.3
+    },
+    {
+        "word": "that",
+        "start": 48.3,
+        "end": 48.44
+    },
+    {
+        "word": "I'm",
+        "start": 48.44,
+        "end": 48.56
+    },
+    {
+        "word": "being",
+        "start": 48.56,
+        "end": 48.82
+    },
+    {
+        "word": "overdramatic.",
+        "start": 48.82,
+        "end": 49.54
+    },
+    {
+        "word": "I",
+        "start": 49.88,
+        "end": 50.2
+    },
+    {
+        "word": "yelled",
+        "start": 50.2,
+        "end": 50.44
+    },
+    {
+        "word": "and",
+        "start": 50.44,
+        "end": 50.62
+    },
+    {
+        "word": "told",
+        "start": 50.62,
+        "end": 50.82
+    },
+    {
+        "word": "him",
+        "start": 50.82,
+        "end": 50.96
+    },
+    {
+        "word": "my",
+        "start": 50.96,
+        "end": 51.22
+    },
+    {
+        "word": "past",
+        "start": 51.22,
+        "end": 51.46
+    },
+    {
+        "word": "addiction",
+        "start": 51.46,
+        "end": 51.82
+    },
+    {
+        "word": "was",
+        "start": 51.82,
+        "end": 52.12
+    },
+    {
+        "word": "not",
+        "start": 52.12,
+        "end": 52.34
+    },
+    {
+        "word": "a",
+        "start": 52.34,
+        "end": 52.52
+    },
+    {
+        "word": "joke.",
+        "start": 52.52,
+        "end": 52.74
+    },
+    {
+        "word": "He",
+        "start": 53.02,
+        "end": 53.38
+    },
+    {
+        "word": "said",
+        "start": 53.38,
+        "end": 53.52
+    },
+    {
+        "word": "that",
+        "start": 53.52,
+        "end": 53.68
+    },
+    {
+        "word": "I",
+        "start": 53.68,
+        "end": 53.8
+    },
+    {
+        "word": "couldn't",
+        "start": 53.8,
+        "end": 54.08
+    },
+    {
+        "word": "handle",
+        "start": 54.08,
+        "end": 54.38
+    },
+    {
+        "word": "a",
+        "start": 54.38,
+        "end": 54.62
+    },
+    {
+        "word": "joke",
+        "start": 54.62,
+        "end": 54.84
+    },
+    {
+        "word": "and",
+        "start": 54.84,
+        "end": 55.0
+    },
+    {
+        "word": "that",
+        "start": 55.0,
+        "end": 55.12
+    },
+    {
+        "word": "he's",
+        "start": 55.12,
+        "end": 55.34
+    },
+    {
+        "word": "a",
+        "start": 55.34,
+        "end": 55.52
+    },
+    {
+        "word": "prankster.",
+        "start": 55.52,
+        "end": 55.94
+    },
+    {
+        "word": "He's",
+        "start": 56.2,
+        "end": 56.58
+    },
+    {
+        "word": "pulled",
+        "start": 56.58,
+        "end": 56.76
+    },
+    {
+        "word": "small",
+        "start": 56.76,
+        "end": 57.18
+    },
+    {
+        "word": "pranks",
+        "start": 57.18,
+        "end": 57.48
+    },
+    {
+        "word": "before,",
+        "start": 57.48,
+        "end": 57.88
+    },
+    {
+        "word": "but",
+        "start": 57.88,
+        "end": 58.08
+    },
+    {
+        "word": "they",
+        "start": 58.08,
+        "end": 58.22
+    },
+    {
+        "word": "were",
+        "start": 58.22,
+        "end": 58.44
+    },
+    {
+        "word": "usually",
+        "start": 58.44,
+        "end": 58.82
+    },
+    {
+        "word": "small",
+        "start": 58.82,
+        "end": 59.18
+    },
+    {
+        "word": "and",
+        "start": 59.18,
+        "end": 59.48
+    },
+    {
+        "word": "silly.",
+        "start": 59.48,
+        "end": 59.7
+    },
+    {
+        "word": "This",
+        "start": 60.0,
+        "end": 60.24
+    },
+    {
+        "word": "was",
+        "start": 60.24,
+        "end": 60.4
+    },
+    {
+        "word": "something",
+        "start": 60.4,
+        "end": 60.72
+    },
+    {
+        "word": "else.",
+        "start": 60.72,
+        "end": 61.08
+    },
+    {
+        "word": "It",
+        "start": 61.14,
+        "end": 61.36
+    },
+    {
+        "word": "felt",
+        "start": 61.36,
+        "end": 61.5
+    },
+    {
+        "word": "like",
+        "start": 61.5,
+        "end": 61.74
+    },
+    {
+        "word": "a",
+        "start": 61.74,
+        "end": 61.94
+    },
+    {
+        "word": "slap",
+        "start": 61.94,
+        "end": 62.06
+    },
+    {
+        "word": "in",
+        "start": 62.06,
+        "end": 62.22
+    },
+    {
+        "word": "the",
+        "start": 62.22,
+        "end": 62.38
+    },
+    {
+        "word": "face.",
+        "start": 62.38,
+        "end": 62.74
+    },
+    {
+        "word": "I",
+        "start": 62.74,
+        "end": 62.92
+    },
+    {
+        "word": "told",
+        "start": 62.92,
+        "end": 63.14
+    },
+    {
+        "word": "him",
+        "start": 63.14,
+        "end": 63.28
+    },
+    {
+        "word": "if",
+        "start": 63.28,
+        "end": 63.36
+    },
+    {
+        "word": "this",
+        "start": 63.36,
+        "end": 63.56
+    },
+    {
+        "word": "was",
+        "start": 63.56,
+        "end": 63.74
+    },
+    {
+        "word": "his",
+        "start": 63.74,
+        "end": 63.96
+    },
+    {
+        "word": "idea",
+        "start": 63.96,
+        "end": 64.34
+    },
+    {
+        "word": "of",
+        "start": 64.34,
+        "end": 64.52
+    },
+    {
+        "word": "a",
+        "start": 64.52,
+        "end": 64.7
+    },
+    {
+        "word": "joke,",
+        "start": 64.7,
+        "end": 64.92
+    },
+    {
+        "word": "then",
+        "start": 65.14,
+        "end": 65.22
+    },
+    {
+        "word": "we",
+        "start": 65.22,
+        "end": 65.38
+    },
+    {
+        "word": "would",
+        "start": 65.38,
+        "end": 65.52
+    },
+    {
+        "word": "have",
+        "start": 65.52,
+        "end": 65.7
+    },
+    {
+        "word": "to",
+        "start": 65.7,
+        "end": 65.88
+    },
+    {
+        "word": "break",
+        "start": 65.88,
+        "end": 66.08
+    },
+    {
+        "word": "up.",
+        "start": 66.08,
+        "end": 66.38
+    },
+    {
+        "word": "He",
+        "start": 66.54,
+        "end": 66.8
+    },
+    {
+        "word": "got",
+        "start": 66.8,
+        "end": 67.04
+    },
+    {
+        "word": "angry",
+        "start": 67.04,
+        "end": 67.44
+    },
+    {
+        "word": "and",
+        "start": 67.44,
+        "end": 67.72
+    },
+    {
+        "word": "started",
+        "start": 67.72,
+        "end": 67.98
+    },
+    {
+        "word": "yelling",
+        "start": 67.98,
+        "end": 68.28
+    },
+    {
+        "word": "about",
+        "start": 68.28,
+        "end": 68.58
+    },
+    {
+        "word": "how",
+        "start": 68.58,
+        "end": 68.78
+    },
+    {
+        "word": "I",
+        "start": 68.78,
+        "end": 68.98
+    },
+    {
+        "word": "couldn't",
+        "start": 68.98,
+        "end": 69.18
+    },
+    {
+        "word": "take",
+        "start": 69.18,
+        "end": 69.4
+    },
+    {
+        "word": "a",
+        "start": 69.4,
+        "end": 69.62
+    },
+    {
+        "word": "joke.",
+        "start": 69.62,
+        "end": 69.86
+    },
+    {
+        "word": "I",
+        "start": 70.34,
+        "end": 70.44
+    },
+    {
+        "word": "told",
+        "start": 70.44,
+        "end": 70.64
+    },
+    {
+        "word": "him",
+        "start": 70.64,
+        "end": 70.82
+    },
+    {
+        "word": "to",
+        "start": 70.82,
+        "end": 71.02
+    },
+    {
+        "word": "leave",
+        "start": 71.02,
+        "end": 71.22
+    },
+    {
+        "word": "and",
+        "start": 71.22,
+        "end": 71.44
+    },
+    {
+        "word": "that",
+        "start": 71.44,
+        "end": 71.54
+    },
+    {
+        "word": "I",
+        "start": 71.54,
+        "end": 71.6
+    },
+    {
+        "word": "would",
+        "start": 71.6,
+        "end": 71.76
+    },
+    {
+        "word": "talk",
+        "start": 71.76,
+        "end": 71.98
+    },
+    {
+        "word": "to",
+        "start": 71.98,
+        "end": 72.1
+    },
+    {
+        "word": "him",
+        "start": 72.1,
+        "end": 72.22
+    },
+    {
+        "word": "in",
+        "start": 72.22,
+        "end": 72.32
+    },
+    {
+        "word": "the",
+        "start": 72.32,
+        "end": 72.46
+    },
+    {
+        "word": "morning.",
+        "start": 72.46,
+        "end": 72.76
+    },
+    {
+        "word": "He",
+        "start": 73.14,
+        "end": 73.28
+    },
+    {
+        "word": "got",
+        "start": 73.28,
+        "end": 73.48
+    },
+    {
+        "word": "up",
+        "start": 73.48,
+        "end": 73.66
+    },
+    {
+        "word": "in",
+        "start": 73.66,
+        "end": 73.78
+    },
+    {
+        "word": "my",
+        "start": 73.78,
+        "end": 74.04
+    },
+    {
+        "word": "face",
+        "start": 74.04,
+        "end": 74.26
+    },
+    {
+        "word": "and",
+        "start": 74.26,
+        "end": 74.44
+    },
+    {
+        "word": "told",
+        "start": 74.44,
+        "end": 74.6
+    },
+    {
+        "word": "me",
+        "start": 74.6,
+        "end": 74.8
+    },
+    {
+        "word": "that",
+        "start": 74.8,
+        "end": 74.92
+    },
+    {
+        "word": "I",
+        "start": 74.92,
+        "end": 75.08
+    },
+    {
+        "word": "couldn't",
+        "start": 75.08,
+        "end": 75.34
+    },
+    {
+        "word": "make",
+        "start": 75.34,
+        "end": 75.5
+    },
+    {
+        "word": "him",
+        "start": 75.5,
+        "end": 75.76
+    },
+    {
+        "word": "leave",
+        "start": 75.76,
+        "end": 76.0
+    },
+    {
+        "word": "and",
+        "start": 76.0,
+        "end": 76.46
+    },
+    {
+        "word": "started",
+        "start": 76.46,
+        "end": 76.72
+    },
+    {
+        "word": "made",
+        "start": 76.72,
+        "end": 76.96
+    },
+    {
+        "word": "threats.",
+        "start": 76.96,
+        "end": 77.44
+    },
+    {
+        "word": "He's",
+        "start": 77.74,
+        "end": 78.06
+    },
+    {
+        "word": "a",
+        "start": 78.06,
+        "end": 78.18
+    },
+    {
+        "word": "very",
+        "start": 78.18,
+        "end": 78.44
+    },
+    {
+        "word": "strong",
+        "start": 78.44,
+        "end": 78.68
+    },
+    {
+        "word": "man,",
+        "start": 78.68,
+        "end": 79.04
+    },
+    {
+        "word": "but",
+        "start": 79.04,
+        "end": 79.22
+    },
+    {
+        "word": "this",
+        "start": 79.22,
+        "end": 79.44
+    },
+    {
+        "word": "was",
+        "start": 79.44,
+        "end": 79.64
+    },
+    {
+        "word": "the",
+        "start": 79.64,
+        "end": 79.78
+    },
+    {
+        "word": "first",
+        "start": 79.78,
+        "end": 79.98
+    },
+    {
+        "word": "time",
+        "start": 79.98,
+        "end": 80.2
+    },
+    {
+        "word": "I",
+        "start": 80.2,
+        "end": 80.34
+    },
+    {
+        "word": "felt",
+        "start": 80.34,
+        "end": 80.54
+    },
+    {
+        "word": "threatened",
+        "start": 80.54,
+        "end": 80.9
+    },
+    {
+        "word": "by",
+        "start": 80.9,
+        "end": 81.16
+    },
+    {
+        "word": "him.",
+        "start": 81.16,
+        "end": 81.44
+    },
+    {
+        "word": "I",
+        "start": 81.72,
+        "end": 81.96
+    },
+    {
+        "word": "told",
+        "start": 81.96,
+        "end": 82.16
+    },
+    {
+        "word": "him",
+        "start": 82.16,
+        "end": 82.34
+    },
+    {
+        "word": "that",
+        "start": 82.34,
+        "end": 82.48
+    },
+    {
+        "word": "the",
+        "start": 82.48,
+        "end": 82.68
+    },
+    {
+        "word": "cops",
+        "start": 82.68,
+        "end": 82.88
+    },
+    {
+        "word": "could",
+        "start": 82.88,
+        "end": 83.08
+    },
+    {
+        "word": "make",
+        "start": 83.08,
+        "end": 83.24
+    },
+    {
+        "word": "him",
+        "start": 83.24,
+        "end": 83.48
+    },
+    {
+        "word": "leave.",
+        "start": 83.48,
+        "end": 83.72
+    },
+    {
+        "word": "He",
+        "start": 83.94,
+        "end": 84.24
+    },
+    {
+        "word": "glared",
+        "start": 84.24,
+        "end": 84.54
+    },
+    {
+        "word": "at",
+        "start": 84.54,
+        "end": 84.7
+    },
+    {
+        "word": "me",
+        "start": 84.7,
+        "end": 84.82
+    },
+    {
+        "word": "for",
+        "start": 84.82,
+        "end": 85.02
+    },
+    {
+        "word": "few",
+        "start": 85.02,
+        "end": 85.18
+    },
+    {
+        "word": "more",
+        "start": 85.18,
+        "end": 85.48
+    },
+    {
+        "word": "seconds",
+        "start": 85.48,
+        "end": 85.82
+    },
+    {
+        "word": "than",
+        "start": 85.82,
+        "end": 86.1
+    },
+    {
+        "word": "left.",
+        "start": 86.1,
+        "end": 86.38
+    },
+    {
+        "word": "I've",
+        "start": 86.38,
+        "end": 87.02
+    },
+    {
+        "word": "blocked",
+        "start": 87.02,
+        "end": 87.22
+    },
+    {
+        "word": "him",
+        "start": 87.22,
+        "end": 87.46
+    },
+    {
+        "word": "and",
+        "start": 87.46,
+        "end": 87.66
+    },
+    {
+        "word": "haven't",
+        "start": 87.66,
+        "end": 87.92
+    },
+    {
+        "word": "talked",
+        "start": 87.92,
+        "end": 88.06
+    },
+    {
+        "word": "to",
+        "start": 88.06,
+        "end": 88.18
+    },
+    {
+        "word": "him",
+        "start": 88.18,
+        "end": 88.32
+    },
+    {
+        "word": "since.",
+        "start": 88.32,
+        "end": 88.64
     }
 ]

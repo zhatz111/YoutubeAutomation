@@ -26,7 +26,6 @@ from moviepy.editor import (  # pylint: disable=import-error
     VideoFileClip,
     CompositeAudioClip,
     AudioFileClip,
-    ImageClip,
 )
 
 # Determine parent path of repository
@@ -202,7 +201,7 @@ def create_caption(
 
     frame_width = framesize[0]
     frame_height = framesize[1]
-    x_buffer = frame_width * 1 / 10
+    # x_buffer = frame_width * 1 / 10
     y_buffer = frame_height * 1 / 5
     space_width = ""
 
@@ -430,22 +429,32 @@ def main(
     print("Compositing final video...")
     # If you want to overlay this on the original video uncomment this and
     # also change frame_size, font size and color accordingly.
-    background_clip = ImageClip(str(parent_dir / "Photos/default_bg.png")).set_duration(
-        input_video.duration
-    )
+    # background_clip = ImageClip(str(parent_dir / "Photos/default_bg.png")).set_duration(
+    #     input_video.duration
+    # )
     final_video = CompositeVideoClip(
-        [background_clip, input_video.set_position("center")] + all_linelevel_splits
+        [input_video.set_position("center")] + all_linelevel_splits
     )
     audioclip = AudioFileClip(str(speech_audio_path))
+    # trimmed_audio = audioclip.set_duration(0, final_video.duration)
+    # trimmed_audio.write_videofile(f"{speech_audio_path.name}", codec=codec, audio_codec=audio_codec)
     new_audioclip = CompositeAudioClip([input_video.audio, audioclip])
 
     # Set the audio of the final video to be the same as the input video
     final_video = final_video.set_audio(new_audioclip)
-
+    if final_video.duration > 59:
+        final_video_trimmed = final_video.subclip(0,59)
     # Save the final clip as a video file with the audio included
-    final_video.write_videofile(
-        str(video_output_path),
-        fps=fps,
-        codec=codec,
-        audio_codec=audio_codec,
-    )
+        final_video_trimmed.write_videofile(
+            str(video_output_path),
+            fps=fps,
+            codec=codec,
+            audio_codec=audio_codec,
+        )
+    else:
+        final_video.write_videofile(
+            str(video_output_path),
+            fps=fps,
+            codec=codec,
+            audio_codec=audio_codec,
+        )

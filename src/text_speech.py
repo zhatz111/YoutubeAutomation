@@ -26,7 +26,8 @@ import json
 from pathlib import Path
 import http.client
 from elevenlabs import generate
-from elevenlabs import set_api_key
+import google.cloud.texttospeech as tts # pylint: disable=import-error, no-name-in-module
+from google.oauth2 import service_account
 
 # Function to send a request to the API and save the speech
 def generate_speech(
@@ -109,10 +110,8 @@ def generate_speech(
     conn.close()
 
 def generate_speech_2(
-    api_key,
     text_file_path: Path,
     output_filename: Path,
-    voice_id: str,
 ):
 
     # set_api_key(api_key)
@@ -137,3 +136,39 @@ def generate_speech_2(
     with open(f"{output_filename}.mp3", "wb") as file:
         file.write(audio)
     print("Speech generated successfully!")
+
+def text_to_audio(
+        voice_name: str,
+        output_filepath: Path,
+        text_file: str,
+        client_info_path: str
+    ):
+
+    audio_dir = os.listdir(str(output_filepath.parent))
+    if f"{output_filepath.name}" in audio_dir:
+        print("Using existing audio file.")
+        return
+
+    credentials = service_account.Credentials.from_service_account_file(client_info_path)
+
+    try:
+        with open(str(text_file), "r", encoding="utf-8") as file:
+            text = file.read().strip()
+    except FileNotFoundError:
+        print("Text file not found!")
+    language_code = "-".join(voice_name.split("-")[:2])
+    text_input = tts.SynthesisInput(text=text)
+    voice_params = tts.VoiceSelectionParams(
+        language_code=language_code, name=voice_name
+    )
+    audio_config = tts.AudioConfig(audio_encoding=tts.AudioEncoding.LINEAR16)
+
+    client = tts.TextToSpeechClient(credentials=credentials)
+    response = client.synthesize_speech(
+        input=text_input,
+        voice=voice_params,
+        audio_config=audio_config,
+    )
+    with open(output_filepath, "wb") as out:
+        out.write(response.audio_content)
+        print(f'Generated speech saved to "{output_filepath}"')

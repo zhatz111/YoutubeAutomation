@@ -8,3 +8,4 @@ selenium==4.16.0
 ffmpeg-python==0.2.0
 ffmpeg==1.4
 opencv-python==4.8.1.78
+elevenlabs==0.2.27
